@@ -1,0 +1,71 @@
+{
+  "name": "vue-brunch-template",
+  "version": "1.0.0",
+  "description": "Vue web apps with brunch, vuex and vue-router",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "brunch build --production",
+    "start": "node server.js",
+    "build": "brunch build",
+    "production": "brunch build --production",
+    "watch": "brunch watch --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiningshisa/vue-brunch-template.git"
+  },
+  "engines": {
+    "node": "6.11.1",
+    "npm": "3.10.10"
+  },
+  "keywords": [
+    "Vue",
+    "Brunch"
+  ],
+  "author": "Shane Winger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiningshisa/vue-brunch-template/issues"
+  },
+  "homepage": "https://github.com/shiningshisa/vue-brunch-template#readme",
+  "dependencies": {
+    "auto-reload-brunch": "2.7.1",
+    "autoprefixer": "^6.7.7",
+    "autoprefixer-stylus": "^0.13.0",
+    "babel-brunch": "^6.0.6",
+    "babel-plugin-transform-runtime": "6.15.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-runtime": "5.8.38",
+    "body-parser": "^1.15.2",
+    "brunch": "^2.9.1",
+    "clean-css-brunch": "^2.10.0",
+    "connect-modrewrite": "0.9.0",
+    "cookie-parser": "^1.4.3",
+    "css-brunch": "2.6.1",
+    "cssnano-brunch": "^1.1.8",
+    "dotenv": "^4.0.0",
+    "express": "4.14.0",
+    "javascript-brunch": "^2.10.0",
+    "postcss": "^6.0.1",
+    "postcss-brunch": "^2.0.5",
+    "postcss-brunch-again": "^0.1.2",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "poststylus": "^0.2.3",
+    "stylus-brunch": "^2.10.0",
+    "uglify-js-brunch": "^2.10.0",
+    "vee-validate": "2.0.0-beta.25",
+    "vue": "2.1.10",
+    "vue-brunch": "1.2.0",
+    "vue-resource": "^1.3.4",
+    "vue-router": "2.0.0",
+    "vue-scrollto": "^2.7.5",
+    "vue-template-compiler": "2.1.10",
+    "vue-touch": "^2.0.0-beta.4",
+    "vue-waypoint": "^2.5.0",
+    "vueify": "9.4.0",
+    "vueify-insert-css": "1.0.0",
+    "vuex": "2.0.0"
+  }
+}

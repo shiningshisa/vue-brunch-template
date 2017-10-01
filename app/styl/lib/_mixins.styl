@@ -1,0 +1,43 @@
+@import './_variables.styl'
+@import './_colors.styl'
+
+//clearfix
+
+  cf()
+    zoom 1
+    &:after
+    &:before
+      content""
+      display table
+    &:after
+      clear both
+
+// flex-box utility, pass params to set justify-content, align-items and flex-wrap/direction
+
+  flexbox(d = flex, jc = center, ai = center, fd = row, fw = nowrap)
+    display d
+    justify-content jc
+    align-items ai
+    flex-direction fd
+    flex-wrap fw
+
+// set box-shadow, uses sensible defaults
+
+  bsd(col= darkGray, f = 0.05rem, s = 0.06rem, r = 0.15rem)
+      box-shadow f s r col
+
+// setting text shadow
+
+  tsd(col= darkGray, l = 0.075rem, t = 0.075rem)
+      text-shadow l t col
+
+// :after image overlay
+  after(w = 100%, h = 100%, top = 0, left = 0, z = 1, col = $dark-gray, o = 0.75)
+    content ""
+    background rgba(col, o)
+    position absolute
+    width w
+    height h
+    top top
+    left left
+    z-index z

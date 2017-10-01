@@ -1,0 +1,44 @@
+  // Breakpoints
+
+  bp = {}
+  bp.extra-small = "screen and (min-width: 365px) and (max-width: 424px)"
+  bp.small = "screen and (min-width: 450px) and (max-width: 767px)"
+  bp.mob-only = "screen and (min-width: 450px)"
+  bp.medium-small = "screen and (min-width: 600px)"
+  bp.tablet = "screen and (min-width: 768px)"
+  bp.tablet-wide = "screen and (min-width: 1024px)"
+  bp.laptop-small = "screen and (min-width: 1280px)"
+  bp.laptop = "screen and (min-width: 1376px)"
+  bp.laptop-large = "screen and (min-width: 1440px)"
+  bp.full-size = "screen and (min-width: 1600px)"
+  bp.full-size-large = "screen and (min-width: 1920px)"
+
+
+// Type Variables
+
+$scale = 1.333
+$base-font-size = 1rem
+$base-line-height = 1.25 * $base-font-size
+
+$type-scale = {
+  small : (1rem / $scale)
+  normal : 1rem
+  medium : (1rem * $scale)
+  large : 1rem * ($scale ** 2)
+  ex-large : 1rem * ($scale ** 3)
+}
+
+$line-height = {
+  small : $base-line-height
+  normal : $base-line-height
+  medium : ($base-line-height * 2)
+  large : ($base-line-height * 2)
+  ex-large : ($base-line-height * 3)
+}
+
+$type-setting(size = small)
+  font-size $type-scale[size];
+  line-height $line-height[size];
+
+$ts = $type-scale
+$lh = $line-height

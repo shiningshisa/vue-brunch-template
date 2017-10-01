@@ -1,0 +1,29 @@
+@import 'lib/_variables.styl'
+@import 'lib/_colors.styl'
+@import 'lib/_mixins.styl'
+
+html, body, #app 
+    font-size 16px
+    font-family "Poppins", sans-serif
+
+h1.x-l
+     $type-setting(size:ex-large)
+     margin 0 0 "calc(%s * 1.25)" % $base-font-size;
+h1
+     $type-setting(size:large)
+     margin 0 0 "calc(%s * 1.25)" % $base-font-size;
+h2
+     $type-setting(size:medium)
+     margin 0 0 $base-line-height;
+h3
+     $type-setting(size:normal)
+     text-transform uppercase
+     margin 0 0 $base-line-height;
+h4, p, i, blockquote
+     $type-setting(size:normal)
+     margin 0 0 $base-line-height;
+p:last-child
+    margin 0
+p.small
+     $type-setting(size:small)
+     margin 0 0 $base-line-height;
